@@ -2,19 +2,27 @@ package web.member.pojo;
 
 import java.sql.Timestamp;
 
-import core.pojo.Core;
+import javax.persistence.*;
 
+
+import core.pojo.Core;
+@Entity
 public class Member extends Core {
 	private static final long serialVersionUID = 1062017833925367218L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String username;
 	private String password;
 	private String nickname;
 	private Boolean pass;
+	@Column(name = "ROLE_ID")
 	private Integer roleId;
 	private String creator;
+	@Column(name = "CREATED_DATE")
 	private Timestamp createdDate;
 	private String updater;
+	@Column(name = "LAST_UPDATED_DATE")
 	private Timestamp lastUpdatedDate;
 
 	public Member() {
