@@ -2,8 +2,6 @@ package core.pojo;
 
 import java.io.Serializable;
 
-import javax.persistence.Entity;
-
 import lombok.Data;
 
 @Data
