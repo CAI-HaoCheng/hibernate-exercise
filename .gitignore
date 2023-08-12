@@ -19,3 +19,4 @@ buildNumber.properties
 .tern-project
 .DS_Store
 .idea/
+.springBeans

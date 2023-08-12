@@ -6,7 +6,7 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 
-@WebListener
+//@WebListener
 public class HibernateListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent sce) {
@@ -17,3 +17,4 @@ public class HibernateListener implements ServletContextListener {
         shutdown();
     }
 }
+//被AppConfig.java取代

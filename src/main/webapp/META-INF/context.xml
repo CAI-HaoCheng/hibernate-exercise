@@ -4,7 +4,7 @@
 
     <Resource name="jdbc/javaFramework" type="javax.sql.DataSource"
               driverClassName="com.mysql.cj.jdbc.Driver"
-              jdbcUrl="jdbc:mysql://localhost:3306/JAVA_FRAMEWORK"
+              jdbcUrl="jdbc:mysql://localhost:3306/JAVA_FRAMEWORK?serverTimeZone=Asia/Taipei"
               username="root"
               password="!Q@W3e4r"
               factory="com.zaxxer.hikari.HikariJNDIFactory"

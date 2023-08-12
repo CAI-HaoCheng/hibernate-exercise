@@ -146,11 +146,11 @@ public class TestApp {
             Transaction transaction = session.beginTransaction();
             Member oldMember = session.get(Member.class, newMember.getId());
             final Boolean pass = newMember.getPass();
-            if (pass != null) {
+            if (pass != null) {//若pass為空值就不做更新
                 oldMember.setPass(pass);
             }
             final Integer roleId = newMember.getRoleId();
-            if (roleId != null) {
+            if (roleId != null) {//若roleId為空值就不做更新
                 oldMember.setRoleId(roleId);
             }
 

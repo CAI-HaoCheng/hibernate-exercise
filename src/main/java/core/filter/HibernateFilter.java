@@ -10,7 +10,7 @@ import javax.servlet.http.HttpFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebFilter("/*")
+//@WebFilter("/*")
 public class HibernateFilter extends HttpFilter {
     private static final long serialVersionUID = 1L;
 

@@ -5,10 +5,7 @@ import java.sql.Timestamp;
 import javax.persistence.*;
 
 import core.pojo.Core;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @Setter
@@ -16,6 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Member extends Core {
+
 	private static final long serialVersionUID = 1062017833925367218L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
